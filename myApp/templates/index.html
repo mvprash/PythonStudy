@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %} 
+
+<h1> Hello </h1>
+
+<center>
+    <img src="{{ url_for('static', filename= 'images/pushup.png') }}" alt="pushup guy"
+    height="200px"
+    />
+</center>
+<p>
+    Welcome to the Push-Ups Logger! This is a simple web application that allows you to log your push-up workouts. You can sign up for an account, log in, and log your push-up workouts. You can also view your profile and see your push-up history.      
+</p>
+{% endblock %}
+
